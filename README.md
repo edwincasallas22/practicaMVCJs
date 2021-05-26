@@ -9,3 +9,4 @@ Preguntas acerca de esta practica:
 
 1. ¿El self. vendria siendo el mismo elemento window?
 2. ¿Hoy en dia que tan frecuente es el usu de Canvas en Js?
+3. Aclarar sobre la concatenación cuando usamos toString()
