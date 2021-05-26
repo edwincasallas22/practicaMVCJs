@@ -7,4 +7,4 @@ En el cual se realiza un juego en la parte del navegador aplicando diferentes co
 
 Preguntas acerca de esta practica:
 
-1.
+1. ¿El self. vendria siendo el mismo elemento window?
