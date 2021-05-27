@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+
+body {
+    text-align: center;
+    
+    font-family: 'Grandstander', cursive;
+    font-size: x-large;
+    font-weight: 400;
+}
+
+#titulo{
+    
+    font-size: 60px;
+  }
+  
+  .juegoTerminado{
+    text-align: center;
+    font-size: 40px;
+    background-color: rgb(15, 122, 15);
+    
+  }  
+
+  footer{
+    margin: 70px;
+    background-color: rgb(117, 136, 190);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

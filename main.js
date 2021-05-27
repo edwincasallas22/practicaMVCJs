@@ -35,10 +35,31 @@
     this.kind = "circle";
   };
   self.Ball.prototype = {
+    juegoTerminado: function () {
+      let msg = document.querySelector(".juegoTerminado");
+      msg.innerText = "El juego ha terminado :)";
+      setTimeout(function () {
+        location.reload();
+      }, 2000);
+    },
+
     move: function () {
+      if (this.y < 1) {
+        this.speed_y = 1;
+      }
+      if (this.y > board.height) {
+        this.speed_y = -1;
+      }
+      if (this.x < 1) {
+        this.juegoTerminado();
+      }
+      if (this.x > board.width) {
+        this.juegoTerminado();
+      }
       this.x += this.speed_x * this.direction;
       this.y += this.speed_y;
     },
+
     get width() {
       return this.radius * 2;
     },
@@ -161,16 +182,16 @@ var board_view = new BoardView(canvas, board);
 var ball = new Ball(350, 100, 10, board);
 
 document.addEventListener("keydown", function (ev) {
-  if (ev.keyCode == 38) {
+  if (ev.keyCode == 87) {
     ev.preventDefault();
     bar.up();
-  } else if (ev.keyCode === 40) {
+  } else if (ev.keyCode === 83) {
     ev.preventDefault();
     bar.down();
-  } else if (ev.keyCode === 87) {
+  } else if (ev.keyCode === 38) {
     ev.preventDefault();
     bar1.up();
-  } else if (ev.keyCode === 83) {
+  } else if (ev.keyCode === 40) {
     ev.preventDefault();
     bar1.down();
   } else if (ev.keyCode === 32) {
