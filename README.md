@@ -8,5 +8,6 @@ En el cual se realiza un juego en la parte del navegador aplicando diferentes co
 Preguntas acerca de esta practica:
 
 1. ¿El self. vendria siendo el mismo elemento window?
-2. ¿Hoy en dia que tan frecuente es el usu de Canvas en Js?
+2. ¿Hoy en dia que tan frecuente es el uso de Canvas en Js?
 3. Aclarar sobre la concatenación cuando usamos toString()
+4.
